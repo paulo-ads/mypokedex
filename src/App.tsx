@@ -301,10 +301,7 @@ export default function App() {
 
             <button
               onClick={() =>
-                window.open(
-                  'https://github.com/restless-dev/mypokedex',
-                  '_blank',
-                )
+                window.open('https://github.com/paulo-ads/mypokedex', '_blank')
               }
               className="mr-[1%] flex aspect-square h-full cursor-pointer items-center justify-center rounded-full border border-white/10 text-white drop-shadow-sm transition-colors hover:bg-white/10 active:bg-black/10"
               title="GitHub Repository"
@@ -633,10 +630,10 @@ export default function App() {
                           className="relative z-10 mt-[1cqw] ml-[2.2cqw] scale-220 object-contain"
                           style={{
                             width: is3DEnabled
-                              ? getSpriteSize(next.height, false)
+                              ? getSpriteSize(next!.height, false)
                               : '50%',
                             height: is3DEnabled
-                              ? getSpriteSize(next.height, false)
+                              ? getSpriteSize(next!.height, false)
                               : '50%',
                           }}
                         />
